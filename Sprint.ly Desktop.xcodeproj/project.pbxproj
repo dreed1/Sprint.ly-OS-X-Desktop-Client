@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		378292681631C8D900589610 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378292671631C8D900589610 /* Cocoa.framework */; };
+		378292721631C8D900589610 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 378292701631C8D900589610 /* InfoPlist.strings */; };
+		378292741631C8D900589610 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292731631C8D900589610 /* main.m */; };
+		378292781631C8D900589610 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 378292761631C8D900589610 /* Credits.rtf */; };
+		3782927B1631C8D900589610 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3782927A1631C8D900589610 /* AppDelegate.m */; };
+		3782927E1631C8D900589610 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3782927C1631C8D900589610 /* MainMenu.xib */; };
+		378292D91631E68500589610 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292D81631E68500589610 /* Reachability.m */; };
+		378292E61631E69000589610 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292DB1631E69000589610 /* NSAlert+MKNetworkKitAdditions.m */; };
+		378292E71631E69000589610 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292DD1631E69000589610 /* NSData+Base64.m */; };
+		378292E81631E69000589610 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292DF1631E69000589610 /* NSDate+RFC1123.m */; };
+		378292E91631E69000589610 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292E11631E69000589610 /* NSDictionary+RequestEncoding.m */; };
+		378292EA1631E69000589610 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292E31631E69000589610 /* NSString+MKNetworkKitAdditions.m */; };
+		378292EB1631E69000589610 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292E51631E69000589610 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		378292F11631E69A00589610 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292ED1631E69A00589610 /* MKNetworkEngine.m */; };
+		378292F21631E69A00589610 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292F01631E69A00589610 /* MKNetworkOperation.m */; };
+		378292F51631E6C600589610 /* AsyncHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 378292F41631E6C600589610 /* AsyncHTTP.m */; };
+		378292FC1631EC8100589610 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378292FB1631EC8100589610 /* SystemConfiguration.framework */; };
+		378292FE1631ECD100589610 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378292FD1631ECD100589610 /* CFNetwork.framework */; };
+		378293001631ECD900589610 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378292FF1631ECD900589610 /* Security.framework */; };
+		378293051631F0D400589610 /* ProductTableDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 378293041631F0D400589610 /* ProductTableDriver.m */; };
+		378293091631F70200589610 /* ItemTableDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 378293081631F70200589610 /* ItemTableDriver.m */; };
+		3782930D163205C300589610 /* PeopleTableDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3782930C163205C300589610 /* PeopleTableDriver.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		378292631631C8D900589610 /* Sprint.ly Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sprint.ly Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		378292671631C8D900589610 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3782926A1631C8D900589610 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3782926B1631C8D900589610 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3782926C1631C8D900589610 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3782926F1631C8D900589610 /* Sprint.ly Desktop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sprint.ly Desktop-Info.plist"; sourceTree = "<group>"; };
+		378292711631C8D900589610 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		378292731631C8D900589610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		378292751631C8D900589610 /* Sprint.ly Desktop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sprint.ly Desktop-Prefix.pch"; sourceTree = "<group>"; };
+		378292771631C8D900589610 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		378292791631C8D900589610 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3782927A1631C8D900589610 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3782927D1631C8D900589610 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		378292D71631E68500589610 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		378292D81631E68500589610 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		378292DA1631E69000589610 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		378292DB1631E69000589610 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		378292DC1631E69000589610 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		378292DD1631E69000589610 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		378292DE1631E69000589610 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		378292DF1631E69000589610 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		378292E01631E69000589610 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		378292E11631E69000589610 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		378292E21631E69000589610 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		378292E31631E69000589610 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		378292E41631E69000589610 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		378292E51631E69000589610 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		378292EC1631E69A00589610 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		378292ED1631E69A00589610 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		378292EE1631E69A00589610 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		378292EF1631E69A00589610 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		378292F01631E69A00589610 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		378292F31631E6C600589610 /* AsyncHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncHTTP.h; sourceTree = "<group>"; };
+		378292F41631E6C600589610 /* AsyncHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncHTTP.m; sourceTree = "<group>"; };
+		378292FB1631EC8100589610 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		378292FD1631ECD100589610 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		378292FF1631ECD900589610 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		378293031631F0D400589610 /* ProductTableDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableDriver.h; sourceTree = "<group>"; };
+		378293041631F0D400589610 /* ProductTableDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableDriver.m; sourceTree = "<group>"; };
+		378293071631F70200589610 /* ItemTableDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableDriver.h; sourceTree = "<group>"; };
+		378293081631F70200589610 /* ItemTableDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableDriver.m; sourceTree = "<group>"; };
+		3782930B163205C300589610 /* PeopleTableDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTableDriver.h; sourceTree = "<group>"; };
+		3782930C163205C300589610 /* PeopleTableDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableDriver.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		378292601631C8D900589610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378293001631ECD900589610 /* Security.framework in Frameworks */,
+				378292FE1631ECD100589610 /* CFNetwork.framework in Frameworks */,
+				378292FC1631EC8100589610 /* SystemConfiguration.framework in Frameworks */,
+				378292681631C8D900589610 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		378292581631C8D900589610 = {
+			isa = PBXGroup;
+			children = (
+				3782926D1631C8D900589610 /* Sprint.ly Desktop */,
+				378292661631C8D900589610 /* Frameworks */,
+				378292641631C8D900589610 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		378292641631C8D900589610 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				378292631631C8D900589610 /* Sprint.ly Desktop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		378292661631C8D900589610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				378292FF1631ECD900589610 /* Security.framework */,
+				378292FD1631ECD100589610 /* CFNetwork.framework */,
+				378292FB1631EC8100589610 /* SystemConfiguration.framework */,
+				378292671631C8D900589610 /* Cocoa.framework */,
+				378292691631C8D900589610 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		378292691631C8D900589610 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3782926A1631C8D900589610 /* AppKit.framework */,
+				3782926B1631C8D900589610 /* CoreData.framework */,
+				3782926C1631C8D900589610 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3782926D1631C8D900589610 /* Sprint.ly Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				378293011631F0B300589610 /* View Controllers and such */,
+				378292941631D0AE00589610 /* Utils */,
+				378292791631C8D900589610 /* AppDelegate.h */,
+				3782927A1631C8D900589610 /* AppDelegate.m */,
+				3782927C1631C8D900589610 /* MainMenu.xib */,
+				3782926E1631C8D900589610 /* Supporting Files */,
+			);
+			path = "Sprint.ly Desktop";
+			sourceTree = "<group>";
+		};
+		3782926E1631C8D900589610 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3782926F1631C8D900589610 /* Sprint.ly Desktop-Info.plist */,
+				378292701631C8D900589610 /* InfoPlist.strings */,
+				378292731631C8D900589610 /* main.m */,
+				378292751631C8D900589610 /* Sprint.ly Desktop-Prefix.pch */,
+				378292761631C8D900589610 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		378292941631D0AE00589610 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				378292D61631E66B00589610 /* HTTP Singleton */,
+				378292D31631DF0F00589610 /* MKNetworkKit */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		378292D31631DF0F00589610 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				378292EC1631E69A00589610 /* MKNetworkEngine.h */,
+				378292ED1631E69A00589610 /* MKNetworkEngine.m */,
+				378292EE1631E69A00589610 /* MKNetworkKit.h */,
+				378292EF1631E69A00589610 /* MKNetworkOperation.h */,
+				378292F01631E69A00589610 /* MKNetworkOperation.m */,
+				378292D51631E66300589610 /* Reachability */,
+				378292D41631E5E600589610 /* Categories */,
+			);
+			name = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		378292D41631E5E600589610 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				378292DA1631E69000589610 /* NSAlert+MKNetworkKitAdditions.h */,
+				378292DB1631E69000589610 /* NSAlert+MKNetworkKitAdditions.m */,
+				378292DC1631E69000589610 /* NSData+Base64.h */,
+				378292DD1631E69000589610 /* NSData+Base64.m */,
+				378292DE1631E69000589610 /* NSDate+RFC1123.h */,
+				378292DF1631E69000589610 /* NSDate+RFC1123.m */,
+				378292E01631E69000589610 /* NSDictionary+RequestEncoding.h */,
+				378292E11631E69000589610 /* NSDictionary+RequestEncoding.m */,
+				378292E21631E69000589610 /* NSString+MKNetworkKitAdditions.h */,
+				378292E31631E69000589610 /* NSString+MKNetworkKitAdditions.m */,
+				378292E41631E69000589610 /* UIAlertView+MKNetworkKitAdditions.h */,
+				378292E51631E69000589610 /* UIAlertView+MKNetworkKitAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		378292D51631E66300589610 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				378292D71631E68500589610 /* Reachability.h */,
+				378292D81631E68500589610 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		378292D61631E66B00589610 /* HTTP Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				378292F31631E6C600589610 /* AsyncHTTP.h */,
+				378292F41631E6C600589610 /* AsyncHTTP.m */,
+			);
+			name = "HTTP Singleton";
+			sourceTree = "<group>";
+		};
+		378293011631F0B300589610 /* View Controllers and such */ = {
+			isa = PBXGroup;
+			children = (
+				3782930A163205B200589610 /* People Table Driver */,
+				378293061631F6F300589610 /* Item Table Driver */,
+				378293021631F0C100589610 /* Product Table Driver */,
+			);
+			name = "View Controllers and such";
+			sourceTree = "<group>";
+		};
+		378293021631F0C100589610 /* Product Table Driver */ = {
+			isa = PBXGroup;
+			children = (
+				378293031631F0D400589610 /* ProductTableDriver.h */,
+				378293041631F0D400589610 /* ProductTableDriver.m */,
+			);
+			name = "Product Table Driver";
+			sourceTree = "<group>";
+		};
+		378293061631F6F300589610 /* Item Table Driver */ = {
+			isa = PBXGroup;
+			children = (
+				378293071631F70200589610 /* ItemTableDriver.h */,
+				378293081631F70200589610 /* ItemTableDriver.m */,
+			);
+			name = "Item Table Driver";
+			sourceTree = "<group>";
+		};
+		3782930A163205B200589610 /* People Table Driver */ = {
+			isa = PBXGroup;
+			children = (
+				3782930B163205C300589610 /* PeopleTableDriver.h */,
+				3782930C163205C300589610 /* PeopleTableDriver.m */,
+			);
+			name = "People Table Driver";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		378292621631C8D900589610 /* Sprint.ly Desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378292811631C8D900589610 /* Build configuration list for PBXNativeTarget "Sprint.ly Desktop" */;
+			buildPhases = (
+				3782925F1631C8D900589610 /* Sources */,
+				378292601631C8D900589610 /* Frameworks */,
+				378292611631C8D900589610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sprint.ly Desktop";
+			productName = "Sprint.ly Desktop";
+			productReference = 378292631631C8D900589610 /* Sprint.ly Desktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3782925A1631C8D900589610 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Dan Reed";
+			};
+			buildConfigurationList = 3782925D1631C8D900589610 /* Build configuration list for PBXProject "Sprint.ly Desktop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 378292581631C8D900589610;
+			productRefGroup = 378292641631C8D900589610 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				378292621631C8D900589610 /* Sprint.ly Desktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		378292611631C8D900589610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378292721631C8D900589610 /* InfoPlist.strings in Resources */,
+				378292781631C8D900589610 /* Credits.rtf in Resources */,
+				3782927E1631C8D900589610 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3782925F1631C8D900589610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378292741631C8D900589610 /* main.m in Sources */,
+				3782927B1631C8D900589610 /* AppDelegate.m in Sources */,
+				378292D91631E68500589610 /* Reachability.m in Sources */,
+				378292E61631E69000589610 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				378292E71631E69000589610 /* NSData+Base64.m in Sources */,
+				378292E81631E69000589610 /* NSDate+RFC1123.m in Sources */,
+				378292E91631E69000589610 /* NSDictionary+RequestEncoding.m in Sources */,
+				378292EA1631E69000589610 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				378292EB1631E69000589610 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				378292F11631E69A00589610 /* MKNetworkEngine.m in Sources */,
+				378292F21631E69A00589610 /* MKNetworkOperation.m in Sources */,
+				378292F51631E6C600589610 /* AsyncHTTP.m in Sources */,
+				378293051631F0D400589610 /* ProductTableDriver.m in Sources */,
+				378293091631F70200589610 /* ItemTableDriver.m in Sources */,
+				3782930D163205C300589610 /* PeopleTableDriver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		378292701631C8D900589610 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				378292711631C8D900589610 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		378292761631C8D900589610 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				378292771631C8D900589610 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3782927C1631C8D900589610 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3782927D1631C8D900589610 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3782927F1631C8D900589610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		378292801631C8D900589610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		378292821631C8D900589610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprint.ly Desktop/Sprint.ly Desktop-Prefix.pch";
+				INFOPLIST_FILE = "Sprint.ly Desktop/Sprint.ly Desktop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		378292831631C8D900589610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprint.ly Desktop/Sprint.ly Desktop-Prefix.pch";
+				INFOPLIST_FILE = "Sprint.ly Desktop/Sprint.ly Desktop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3782925D1631C8D900589610 /* Build configuration list for PBXProject "Sprint.ly Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3782927F1631C8D900589610 /* Debug */,
+				378292801631C8D900589610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378292811631C8D900589610 /* Build configuration list for PBXNativeTarget "Sprint.ly Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378292821631C8D900589610 /* Debug */,
+				378292831631C8D900589610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3782925A1631C8D900589610 /* Project object */;
+}
