@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "MKNetworkEngine.h"
 
-#define SPRINTLY_EMAIL @"SPRINTLY EMAIL GOES HERE"
-#define SPRINTLY_API_KEY @"SPRINTLY API TOKEN GOES HERE"
+//find these in your sprint.ly account page
+#define SPRINTLY_EMAIL @"EMAIL GOES HERE"
+#define SPRINTLY_API_KEY @"API KEY GOES HERE"
 
 @interface AsyncHTTP : NSObject
 

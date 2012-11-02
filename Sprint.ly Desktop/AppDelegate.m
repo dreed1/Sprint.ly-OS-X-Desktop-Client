@@ -48,7 +48,9 @@
 }
 
 - (IBAction)callForItems:(id)sender{
-    NSDictionary *params = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithInt:100], nil] forKeys:[NSArray arrayWithObjects: @"limit", nil]];
+    currentPageOfItems =0;
+    moreItemsAvailable = TRUE;
+    NSDictionary *params = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithInt:itemPageSize], nil] forKeys:[NSArray arrayWithObjects: @"limit", nil]];
     [sharedAsync makeGetRequestWithPath:[NSString stringWithFormat:@"products/%d/items.json",activeApplicationId] andParameters:params withCallback:^(MKNetworkOperation *callback){
         [itemTableDriver giveTableArray:[callback responseJSON]];
         [itemsTable reloadData];
@@ -79,6 +81,22 @@
 #pragma mark - item delegate methods
 - (void) reloadItemTable{
     [itemsTable reloadData];
+}
+
+- (void) loadNextPageOfItems{
+    if(!currentlyLoadingNextPage && moreItemsAvailable){
+        currentlyLoadingNextPage = TRUE;
+        currentPageOfItems +=1;
+        NSDictionary *params = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSNumber numberWithInt:itemPageSize],[NSNumber numberWithInt:currentPageOfItems*itemPageSize], nil] forKeys:[NSArray arrayWithObjects: @"limit", @"offset",nil]];
+        [sharedAsync makeGetRequestWithPath:[NSString stringWithFormat:@"products/%d/items.json",activeApplicationId] andParameters:params withCallback:^(MKNetworkOperation *callback){
+            currentlyLoadingNextPage = FALSE;
+            if(![[callback responseJSON]count]){
+                moreItemsAvailable = FALSE;
+            }
+            [itemTableDriver addToTableArray:[callback responseJSON]];
+            [itemsTable reloadData];
+        }];
+    }
 }
 
 #pragma mark - product delegate methods

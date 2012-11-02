@@ -12,6 +12,8 @@
 #import "ItemTableDriver.h"
 #import "PeopleTableDriver.h"
 
+#define itemPageSize 100
+
 @interface AppDelegate : NSObject <NSApplicationDelegate, ItemDriverDelegate, ProductDriverDelegate, PeopleDriverDelegate>{
     AsyncHTTP *sharedAsync;
     
@@ -20,6 +22,9 @@
     
     ItemTableDriver *itemTableDriver;
     IBOutlet NSTableView *itemsTable;
+    int currentPageOfItems;
+    BOOL moreItemsAvailable;
+    BOOL currentlyLoadingNextPage;
     
     PeopleTableDriver *peopleTableDriver;
     IBOutlet NSTableView *peopleTable;
@@ -38,6 +43,7 @@
 
 //item delegate methods
 - (void) reloadItemTable;
+- (void) loadNextPageOfItems;
 
 //product delegate methods
 - (void) userSelectedNewApplication:(int)newAppID;
